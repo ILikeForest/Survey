@@ -1,0 +1,68 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>양서고등학교 설문조사</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #495E57;
+        }
+        #text {
+            background-color: #F5F7F8;
+            border: none;
+            border-radius: 10px;
+            padding: 1px;
+            text-align: center;
+        }
+        .title {
+            font-size: 30px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .hello {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 18px;
+        }
+        #button {
+            position: relative;
+            margin-top: 20%;
+        }
+        #school {
+            width: 50%;
+        }
+        #start {
+            font-size: 80px;
+            font-family: Arial, Helvetica, sans-serif;
+            color: #000000;
+            background-color: #F4CE14;
+            padding: 20px 50px;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+    </style>
+    <script>
+        function link() {
+            window.location.href = "{% url 'BtoA:B_A' %}";
+        }
+    </script>
+</head>
+<body>
+    <div id="text">
+        <h1 class="title">양서고등학교의 이동 경로에 대한 설문조사</h1>
+        <pre class="hello">
+            ❤설문조사에 참여해 주셔서 감사합니다.❤
+            이 설문조사는 창의연구주제탐를 위해 제작했습니다.
+            이 설문조사는 「사람들이 이동할 때 어느 길로 가장 많이 가는지」에 대한 연구에 사용됩니다.
+            다시 한 번 설문조사에 참여해 주셔서 감사합니다ㅠㅠ
+            주변 사람에게도 이 사이트를 알려주세요😀👍
+        </pre>
+    </div>
+    <div id="button">
+        <button id="start" onclick="link()">START</button>
+    </div>
+</body>
+</html>
