@@ -9,7 +9,7 @@ def survey(request):
     context = {
         'startNode': 'I',
         'endNode': 'D',
-        'nextUrl': 'I-D'
+        'nextUrl': 'thanks'
     }
     return render(request, 'final.html', context)
 
