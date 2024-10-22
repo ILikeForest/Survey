@@ -527,7 +527,7 @@
         font-size: 200%;
         margin-bottom: 10px;
     }
-    #stress {
+    #stress1 {
         margin-left: auto;
         margin-right: auto;
         margin-top: 0px;
@@ -553,6 +553,24 @@
         margin-bottom: 10px;
         font-family: Arial, Helvetica, sans-serif;
     }
+    #stress2 {
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 0px;
+        margin-bottom: 10px;
+        width: 50%;
+        text-align: center;
+        background-color: #f2e2a7 ;
+        padding: 1px 10px;
+        border: none;
+        border-radius: 5px;
+    }
+    .colorexplanation {
+        font-size: 20px;
+        margin-bottom: 10px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+    }
     .sorry {
         font-size: 10px;
         font-family: Arial, Helvetica, sans-serif;
@@ -564,22 +582,22 @@
         margin-bottom: -10px;
     }
     #pass {
-        font-size: 15px;
+        font-size: 30px;
         font-family: Arial, Helvetica, sans-serif;
         color: #fff;
         background-color: #000;
-        padding: 5px;
+        padding: 10px;
         border: none;
         border-radius: 5px;
         cursor: pointer;
         margin-right: 10px;
     }
     #submit {
-        font-size: 15px;
+        font-size: 30px;
         font-family: Arial, Helvetica, sans-serif;
         color: #fff;
         background-color: #000;
-        padding: 5px;
+        padding: 10px;
         border: none;
         border-radius: 5px;
         cursor: pointer;
@@ -588,22 +606,22 @@
     #back {
         position: relative;
         margin-right: 10px;
-        font-size: 15px;
+        font-size: 30px;
         font-family: Arial, Helvetica, sans-serif;
         color: #fff;
         background-color: #000;
-        padding: 5px 10px;
+        padding: 10px 15px;
         border: none;
         border-radius: 5px;
         cursor: pointer;
     }
     #reset {
         position: relative;
-        font-size: 15px;
+        font-size: 30px;
         font-family: Arial, Helvetica, sans-serif;
         color: #fff; /* 글자색 */
         background-color: #000;
-        padding: 5px;
+        padding: 10px;
         border: none;
         border-radius: 5px;
         cursor: pointer;
@@ -636,17 +654,23 @@
 <body onload="draw();">
     <div id="hello">
         <h1 class="title">양서고등학교 이동 경로 조사</h1>
-        <div id="stress">
-            <h6 class="surveyName">{{startNode}}에서 {{endNode}}로 가는 경로 이동</h6>
+        <div id="stress1">
+            <h6 class="surveyName">{{startNode}}에서 {{endNode}}로 가는 경로 이동을 만들어 주세요</h6>
         </div>
-        <p class="explanation">검은색&회색 동그라미를 클릭해서 길을 선택해 주세요<br>만약 색깔이 독특한 길이 나온다면 그 길을 클릭해 주세요</p>
+        <p class="explanation">검은색&회색 동그라미를 클릭해서 길을 선택해 주세요<br>
+            원하는 길이 없더라도 최대한 비슷하게만 하면 됩니다 파이팅!!</p>
+        <div id="stress2">
+            <p class="colorexplanation"> 초록색&노란색&주황색&보라색 길이 나온다면 그 길을 클릭해 주세요<br>
+                파란색은 현재 지나온 길을 의미합니다</p>
+        </div>
         <p class="explanation">질문은 DM으로 연락주세요🙏 @tree_kicker07</p>
         <p class="sorry">제 기술이 부족해 길을 선택하는 지도는 원본 사이즈 입니다...</p>
+
     </div>
     <div id="Button">    
         <button id="pass" onclick="passClick()">넘어가기</button>
         <button id="submit" onclick="submitClick()">제출</button>
-        <button id="back" onclick="backClick()">⤺</button>
+        <button id="back" onclick="backClick()">⤺뒤로</button>
         <button id="reset" onclick="resetClick()">경로 선택 리셋</button>
     </div>
     <div id="container">       
